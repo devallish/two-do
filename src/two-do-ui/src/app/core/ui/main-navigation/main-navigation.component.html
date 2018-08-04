@@ -1,0 +1,9 @@
+<div class="main-navbar">
+  <a *ngFor="let navigationItem of navigationItems | async"
+     [routerLink]="[navigationItem.routerLink]"
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+     <i class="fas fa-{{navigationItem.iconKey}}"></i>
+     <span>{{navigationItem.displayName}}</span>
+  </a>
+</div>

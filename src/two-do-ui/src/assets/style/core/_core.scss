@@ -1,0 +1,31 @@
+@import './assets/style/reset/normalize.css';
+@import './fonts';
+@import './spacings';   
+
+@import '../../font-awesome/scss/fontawesome';
+@import '../../font-awesome/scss/solid';
+
+html {
+  font-family: $app-font-family;
+  font-size: $app-font-size;
+  background-color: $content-colour;
+  color: $content-text-colour;
+}
+h1, h2, h3, h4, h5 {
+  font-family: $app-font-family;
+}
+
+.primary-background {
+  background-color: $primary-colour;
+}
+.primary-lighten-1-background {
+  background-color: $primary-90-colour;
+}
+.primary-lighten-2-background {
+  background-color: $primary-80-colour;
+}
+
+.text-container {
+  padding-left: $standard-x;
+  padding-right: $standard-x;
+}
